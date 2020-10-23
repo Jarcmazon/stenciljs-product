@@ -1,0 +1,82 @@
+@import "~bootstrap/scss/bootstrap";
+
+.card {
+  margin: 0.2em;
+}
+
+.card-img-top {
+  width: 80%;
+  display: inline-block;
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1.7vw;
+}
+
+.stars {
+  color: darkorange !important;
+  font-size: 2vw;
+}
+
+.star-icon {
+  background-size:contain;
+  background-position:50%;
+  background-repeat:no-repeat;
+  position:relative;
+  display:inline-block;
+  width:1.33333333em;
+  line-height:1em;
+  color: orange;
+}
+
+.star-icon:before {
+  content:'\00a0'
+}
+
+.star-icon-full {
+  background-image:url('./build/assets/img/star-fill.svg');
+}
+
+.card-text {
+  font-size: 1vw;
+  font-weight: initial;
+}
+
+.price-container {
+  padding-top: 2em;
+}
+
+.price {
+  font-size: 1.8vw;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-title {
+    font-size: 2vw;
+    font-weight: 600;
+  }
+
+  .price {
+    font-size: 1.8vw;
+    font-weight: bolder;
+    line-height: 0.2em;
+  }
+
+  .card-text {
+    font-size: 1vw;
+    font-weight: bolder;
+  }
+
+  .card-body, .card-footer {
+    padding: 0.2em;
+
+  }
+
+  .card-footer {
+    font-size: 2vw;
+  }
+
+}
