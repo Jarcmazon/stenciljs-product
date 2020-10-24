@@ -7,17 +7,13 @@
 
 ## Properties
 
-| Property | Attribute | Description  | Type     | Default     |
-| -------- | --------- | ------------ | -------- | ----------- |
-| `header` | `header`  | Table header | `string` | `undefined` |
-| `items`  | --        | Table items  | `Item[]` | `undefined` |
-
-
-## Events
-
-| Event       | Description                                               | Type                |
-| ----------- | --------------------------------------------------------- | ------------------- |
-| `itemClick` | Custom event emitted when a click is performed over a row | `CustomEvent<Item>` |
+| Property      | Attribute     | Description      | Type     | Default     |
+| ------------- | ------------- | ---------------- | -------- | ----------- |
+| `description` | `description` | Item description | `string` | `undefined` |
+| `img`         | `img`         | Image URL        | `string` | `undefined` |
+| `price`       | `price`       | Item price       | `number` | `undefined` |
+| `stars`       | `stars`       | Item stars       | `any`    | `undefined` |
+| `title`       | `title`       | Item title       | `string` | `undefined` |
 
 
 ----------------------------------------------

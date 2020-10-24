@@ -1,21 +1,26 @@
 {
-  "name": "product-item",
+  "name": "@jaruizes/product-item",
+  "author": "jaruizes",
   "version": "0.0.1",
-  "description": "Producto Item Web Component",
-  "main": "dist/index.cjs.js",
-  "module": "dist/product-item/index.js",
+  "description": "Product Item Web Component",
+  "repository": "https://github.com/jaruizes/stenciljs-product",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/v1/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/custom-elements/index.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
+  "collection": "dist/v1/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/product-item/product-item.js",
   "files": [
-    "dist/",
-    "loader/"
+    "dist/v1/",
+    "dist/loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "build": "stencil build --prod --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",

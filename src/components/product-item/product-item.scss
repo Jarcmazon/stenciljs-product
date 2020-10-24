@@ -40,7 +40,7 @@
 }
 
 .card-text {
-  font-size: 1vw;
+  font-size: 2vw;
   font-weight: initial;
 }
 
@@ -49,24 +49,34 @@
 }
 
 .price {
-  font-size: 1.8vw;
+  font-size: 2.8vw;
   font-weight: bolder;
+}
+
+.stars {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 @media screen and (max-width: 1024px) {
   .card-title {
     font-size: 2vw;
     font-weight: 600;
+    margin-bottom: 1vw;
+  }
+
+  .price-container {
+    padding-top: 0.8em;
   }
 
   .price {
-    font-size: 1.8vw;
+    font-size: 4vw;
     font-weight: bolder;
     line-height: 0.2em;
   }
 
   .card-text {
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bolder;
   }
 
@@ -77,6 +87,11 @@
 
   .card-footer {
     font-size: 2vw;
+  }
+
+  .stars {
+    width: 1.5em;
+    height: 1.5em;
   }
 
 }
