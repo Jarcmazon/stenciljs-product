@@ -1,7 +1,7 @@
 {
   "name": "@jaruizes/product-item",
   "author": "jaruizes",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Product Item Web Component",
   "repository": "https://github.com/jaruizes/stenciljs-product",
   "publishConfig": {
