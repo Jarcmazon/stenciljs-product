@@ -17,22 +17,26 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-outt
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Install packages
-        run: npm install
+      # Set Up Node & Registry
+      - name: Set Up
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
           registry-url: https://npm.pkg.github.com
           scope: '@jaruizes'
 
-      # Runs a single command using the runners shell
+      # Install
+      - name: Install packages
+        run: npm install
+
+      # Build
       - name: Build component
         run: npm build prod
 
-      # Runs a single command using the runners shell
+      # Publish
       - name: Publish package
         run: npm publish
 
