@@ -34,7 +34,7 @@ jobs:
 
       # Build
       - name: Build component
-        run: npm build:prod
+        run: npm run build
 
       # Publish
       - name: Publish package
